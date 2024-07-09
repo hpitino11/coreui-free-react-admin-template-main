@@ -19,8 +19,8 @@ import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 const _nav = [
   {
     component: CNavItem,
-    name: 'dashboardE',
-    to: '/dashboardE',
+    name: 'Dashboard',
+    to: '/DashboardFilled',
     icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
     badge: {
       color: 'info',
@@ -31,44 +31,38 @@ const _nav = [
     name: 'Components',
   },
   {
-    component: CNavGroup,
+    component: CNavItem,
     name: 'Find A Professor',
-    to: '/buttons',
+    to: '/findProf',
     icon: <CIcon icon={cilCursor} customClassName="nav-icon" />,
-    items: [
-      
-    ],
   },
   {
-    component: CNavGroup,
+    component: CNavItem,
     name: 'Shopping Cart',
-    to: '/ShoppingCart',
+    to: '/cart',
     icon: <CIcon icon={cilCart} customClassName="nav-icon" />,
-    items: [
-      
-    ],
   },
   {
     component: CNavTitle,
     name: 'Extras',
   },
   {
-    component: CNavGroup,
+    component: CNavItem,
     name: 'Logout',
+    to: '/buttons',
     icon: <CIcon icon={cilStar} customClassName="nav-icon" />,
-    items: [
-    ],
+ 
   },
   {
     component: CNavItem,
     name: 'About Us',
-    href: 'https://youtube.com',
+    to: '/buttons',
     icon: <CIcon icon={cilDescription} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Contact Us',
-    href: 'https://youtube.com',
+    to: '/buttons',
     icon: <CIcon icon={cilDescription} customClassName="nav-icon" />,
   },
 ]

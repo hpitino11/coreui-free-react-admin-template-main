@@ -66,7 +66,15 @@ const AppHeader = () => {
         </CHeaderNav>
 
         <div className="flex-grow-1 d-flex justify-content-center">
-          <CInputGroup style={{ maxWidth: '400px' }}>
+          <CInputGroup style={{ maxWidth: '80vh' }}>
+            <CDropdown variant="input-group">
+              <CDropdownToggle color="primary">Select University</CDropdownToggle>
+              <CDropdownMenu>
+                <CDropdownItem>UCF</CDropdownItem>
+                <CDropdownItem>Valencia</CDropdownItem>
+                <CDropdownItem>Other</CDropdownItem>
+              </CDropdownMenu>
+            </CDropdown>
             <CFormInput type="search" placeholder="Search Professors" />
             <CInputGroupText>
               <CButton type="button" color="primary">

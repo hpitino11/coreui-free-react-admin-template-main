@@ -1,6 +1,10 @@
 import React from 'react'
 
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
+const DashboardFilled = React.lazy(() => import('./views/dashboard/DashboardFilled'))
+const FindProf = React.lazy(() => import('./views/pages/Professor/FindProf'))
+const Prof = React.lazy(() => import('./views/pages/Professor/Prof'))
+const Cart = React.lazy(() => import('./views/pages/cart/Cart'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
 
@@ -20,6 +24,7 @@ const Spinners = React.lazy(() => import('./views/base/spinners/Spinners'))
 const Tabs = React.lazy(() => import('./views/base/tabs/Tabs'))
 const Tables = React.lazy(() => import('./views/base/tables/Tables'))
 const Tooltips = React.lazy(() => import('./views/base/tooltips/Tooltips'))
+
 
 // Buttons
 const Buttons = React.lazy(() => import('./views/buttons/buttons/Buttons'))
@@ -54,6 +59,10 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
+  { path: '/dashboardFilled', name: 'DashboardFilled', element: DashboardFilled },
+  { path: '/findProf', name: 'FindProf', element: FindProf },
+  { path: '/prof', name: 'Prof', element: Prof },
+  { path: '/cart', name: 'Cart', element: Cart },
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },
   { path: '/theme/typography', name: 'Typography', element: Typography },

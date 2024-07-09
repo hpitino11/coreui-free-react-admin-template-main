@@ -58,7 +58,7 @@ import WidgetsDropdown from '../widgets/WidgetsDropdown'
 import MainChart from './MainChart'
 
 
-const Dashboard = () => {
+const DashboardFilled = () => {
   const progressExample = [
     { title: 'Visits', value: '29.703 Users', percent: 40, color: 'success' },
     { title: 'Unique', value: '24.093 Users', percent: 20, color: 'info' },
@@ -400,7 +400,7 @@ const Dashboard = () => {
 }
 
 
-export default Dashboard
+export default DashboardFilled
 
 
 
